@@ -1,12 +1,12 @@
-all:  readme.txt guessinggame.sh
+all:    guessinggame.sh README.md
 
 create_readme:
-	touch readme.txt
+	touch README.md
 
-readme.txt:
-	echo "Guessing Game" > readme.txt
-	echo `date` >> readme.txt
-	wc -l guessinggame.sh >> readme.txt
+README.md:
+	echo "Guessing Game" > README.md
+	echo `date` >> README.md
+	wc -l guessinggame.sh >> README.md
 	        
 clean:
-	rm readme.txt
+	rm README.md
