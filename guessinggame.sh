@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # File: guessinggame.sh
 file_count=`ls | wc -l`
-echo $file_count
+#echo $file_count
 
+function guess_number_of_files {
 while [[ TRUE ]]
    do	
       echo "Guess the number of files in a directory and then press Enter:"
@@ -19,3 +20,5 @@ while [[ TRUE ]]
 	 echo "Wrong Guess. Your Guess is higher than expected. Try Again.."	
       fi		 
 done
+}
+guess_number_of_files

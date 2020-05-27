@@ -6,7 +6,7 @@ create_readme:
 README.md:
 	echo "Guessing Game\n" > README.md
 	echo "`date`\n" >> README.md
-	wc -l guessinggame.sh >> README.md
-	        
+	echo "Number of lines in guessinggame.sh are `egrep -c . guessinggame.sh`" >> README.md
+
 clean:
 	rm README.md
